@@ -32,18 +32,18 @@ section {
 }
 
 .main h1 {
-    padding: 50px 0;
+    padding: 50px 10px;
     margin: 0;
-    height: 60px;
+    /* margin-bottom: 0px; */
     font-size: 60px;
     font-family: 'Alegreya Sans SC', sans-serif;
     color: #494a49;
 }
 
 .main p {
-    padding: 15px 50px;
+    padding: 15px 40px;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-size: 30px;
     font-family: 'Alegreya Sans SC', sans-serif;
     color: #494a49;
@@ -126,12 +126,120 @@ section {
     color: #000;
 }
 
-@media(max-width: 420px) {
+@media(max-width: 930px) {
+    section {
+        width: 65%;
+    }
+    .main {
+        min-height: 400px;
+    }
+    .main h1 {
+        padding: 40px 15px;
+        font-size: 55px;
+    }
+    .main p {
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }        
+}
+
+@media(max-width: 805px) {
+    section {
+        width: 70%;
+    }
+    .main {
+        min-height: 400px;
+    }
+    .main h1 {
+        padding: 25px 15px;
+        font-size: 50px;
+    }
+    .main p {
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }   
+    .main .access {
+        font-size: 22px;
+    }     
+}
+
+/* Tab View */
+@media(max-width: 600px) {
     section {
         width: 80%;
     }
+    .main {
+        min-height: 400px;
+        overflow: visible;
+    }
+    .main h1 {
+        font-size: 50px;
+        padding: 25px 15px;
+    }
+    .main p {
+        padding: 15px 15px;
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    .main .access {
+        font-size: 20px;
+    }
+    .logo img {
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    .logo h4 {
+        font-size: 25px;
+        text-shadow: 0 2px 3px rgba(0,0,0,.4);
+    }
+    .logo h6 {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-top: 4px;
+        text-shadow: 0 2px 3px rgba(0,0,0,.3);
+    }
+    .footer p {
+        font-size: 12px;
+    }
+    .footer a {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 500px) {
+    .main {
+        min-height: 400px;
+    }
+    .main h1 {
+        padding: 22px 15px;
+        font-size: 45px;
+    }
+    .main p {
+        padding: 15px 20px;
+        margin-bottom: 30px;
+        font-size: 23px;
+    }   
+    .main .access {
+        font-size: 18px;
+    } 
+}
+
+/* Mobile View */
+@media(max-width: 425px) {
+    section {
+        width: 80%;
+    }
+    .main {
+        min-height: 400px;
+    }
     .main h1 {
         font-size: 40px;
+        height: 60px;
+        padding: 40px 10px;
     }
     .main p {
         padding: 15px 10px;
